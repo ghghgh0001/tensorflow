@@ -197,9 +197,9 @@ fi
 cat << EOF > tensorflow_test.py
 #!/usr/bin/python
   import tensorflow as tf
-  hello = tf.constant('Hello, TensorFlow!')
+  message = tf.constant('Successful installation, TensorFlow!')
  sess = tf.Session()
- print(sess.run(hello))
+ print(sess.run(message))
 
 EOF
  }

@@ -192,7 +192,25 @@ then
 fi
 
 
-#Test_installation()
-#{
+ Test_installation()
+ {
+cat << EOF > tensorflow_test.py
+#!/usr/bin/python
+  import tensorflow as tf
+  hello = tf.constant('Hello, TensorFlow!')
+ sess = tf.Session()
+ print(sess.run(hello))
 
-#}
+EOF
+ }
+
+
+echo " To use TensorFlow later you will have to activate the Virtualenv environment again:"
+
+echo " source ~/tensorflow/bin/activate  # If using bash."
+echo " source ~/tensorflow/bin/activate.csh  # If using csh."
+echo "(tensorflow)$  # Your prompt should change."
+echo "# Run Python programs that use TensorFlow."
+echo "...
+echo "# When you are done using TensorFlow, deactivate the environment."
+echo "(tensorflow)$ deactivate"

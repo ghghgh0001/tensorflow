@@ -178,9 +178,9 @@ then
  
 				if [[ "$SHELL" == *"bash"* ]]; 
 					then
-						~/tensorflow/bin/activate
+					source	~/tensorflow/bin/activate
 					else
-						~/tensorflow/bin/activate.csh
+					source	~/tensorflow/bin/activate.csh
 				fi
 	
 	

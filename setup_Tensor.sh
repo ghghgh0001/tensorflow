@@ -204,6 +204,10 @@ cat << EOF > tensorflow_test.py
 EOF
  }
 
+source ~/tensorflow/bin/activate
+echo "running test"
+python tensorflow_test.py
+deactivate
 
 echo " To use TensorFlow later you will have to activate the Virtualenv environment again:"
 
